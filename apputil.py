@@ -47,6 +47,7 @@ def lowest_score(names, scores):
 
 
 # Part 2
+
 # Write a similar function sort_names(names, scores) that will list the names 
 # of students in descending order of test score (i.e., a list of names, with 
 # associated scores in order from highest to lowest).
@@ -57,7 +58,10 @@ def sort_names(names, scores):
     sorted_indices = np.argsort(-scores)
     return names[sorted_indices]
 
-# Example usage:
+
+# Test program
+
+
 names = np.array(['Hannah', 'Astrid', 'Abdul', 'Mauve', 'Jung'])
 scores = np.array([99, 71, 85, 99, 91])
 print(lowest_score(names, scores))
