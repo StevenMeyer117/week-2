@@ -55,6 +55,8 @@ def lowest_score(names, scores):
 
 def sort_names(names, scores):
     """Return student names sorted by score from highest to lowest."""
+    scores = np.array(scores)
+    names = np.array(names)
     sorted_indices = np.argsort(-scores)
     return names[sorted_indices]
 
